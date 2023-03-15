@@ -1,11 +1,32 @@
+import { Inter } from 'next/font/google'
 import Head from 'next/head'
 import Image from 'next/image'
-import { Inter } from 'next/font/google'
+import {useEffect, useRef, useState} from "react";
+import {getDatabase, ref, child, get} from 'firebase/database'
 import styles from '@/styles/Home.module.css'
+import firebaseApp from "@/services/firebase-sdk";
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
+  // console.log(firebaseSDK);
+  const [isLoading, setIsLoading] = useState(true)
+  const snapshot = useRef(null)
+  const error = useRef(null)
+
+  const getValue = async () => {
+    const database = getDatabase(firebaseApp)
+    const rootReference = ref(database)
+    const dbGet = await get (child(rootReference, 'IMU_LSM6DS3'))
+    const dbValue = dbGet.val()
+    console.log(dbValue)
+  }
+  useEffect(() => {
+    getValue()
+  }, [])
+
+
+
   return (
     <>
       <Head>
