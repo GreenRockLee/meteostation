@@ -1,6 +1,32 @@
 body {
+    font-family: 'Outfit', 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
     font: 1em/1.618 Inter, sans-serif;
     background:
             url('../pages/images/tento.jpg')
             center / cover no-repeat fixed;
+}
+
+p {
+    font-size: 1.6rem;
+}
+
+h1 {
+    padding-bottom: 30px;
+    font-size: 8rem;
+
+    color: rgb(230, 230, 230);
+    font-family: text-stroke;
+    opacity: 0.9;
+}
+
+h2 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: 	rgb(38, 38, 38);
+    font-family: text-stroke;
+    opacity: 0.9;
 }

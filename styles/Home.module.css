@@ -6,19 +6,29 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 400px;
-
-
-
+  padding: 12%;
 }
 
 .item{
-  width: 600px;
-  height: 300px;
+  width: 700px;
+  height: 350px;
   border: 1px solid rgba(255, 255, 255, .25);
   border-radius: 20px;
   background-color: rgba(255, 255, 255, 0.45);
   box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
   text-align: center;
+  margin: 10px;
   backdrop-filter: blur(02px);
 }
+
+/*.item2{*/
+/*  width: 320px;*/
+/*  height: 80px;*/
+/*  border: 1px solid rgba(255, 255, 255, .25);*/
+/*  border-radius: 20px;*/
+/*  background-color: rgba(255, 255, 255, 0.45);*/
+/*  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);*/
+/*  text-align: center;*/
+/*  margin: 10px;*/
+/*  backdrop-filter: blur(250px);*/
+/*}*/
