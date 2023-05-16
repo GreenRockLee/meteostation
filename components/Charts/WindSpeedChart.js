@@ -1,7 +1,7 @@
 import React from 'react';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from 'recharts';
 
-const PressureChart = ({ data }) => {
+const WindSpeedChart = ({ data }) => {
     return (
         <LineChart
             width={700}
@@ -10,13 +10,13 @@ const PressureChart = ({ data }) => {
             margin={{ top: 5, right: 30, left: 20, bottom: 5 }}
         >
             <CartesianGrid strokeDasharray="3 3" />
-            <XAxis dataKey="hour" tick={{ fill: '#312f2f' }}/>
+            <XAxis dataKey="date" tick={{ fill: '#312f2f' }}/>
             <YAxis tick={{ fill: '#312f2f' }}/>
             <Tooltip />
             <Legend />
-            <Line type="monotone" dataKey="pressure" stroke="#312f2f" activeDot={{ r: 8 }} />
+            <Line type="monotone" dataKey="windSpeed" stroke="#312f2f" activeDot={{ r: 8 }} />
         </LineChart>
     );
 };
 
-export default PressureChart;
+export default WindSpeedChart;

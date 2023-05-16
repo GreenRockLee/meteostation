@@ -10,7 +10,7 @@ const TemperatureChart = ({ data }) => {
             margin={{ top: 5, right: 30, left: 20, bottom: 5 }}
         >
             <CartesianGrid strokeDasharray="3 3" />
-            <XAxis dataKey="hour" tick={{ fill: '#312f2f' }}/>
+            <XAxis dataKey="date" tick={{ fill: '#312f2f' }}/>
             <YAxis tick={{ fill: '#312f2f' }}/>
             <Tooltip />
             <Legend />
